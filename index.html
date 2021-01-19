@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Earthquake Visualizer</title>
+</head>
+<body>
+    <div id="preloader">
+        <h4 id="loadText">Loading</h4>
+    </div>
+</div>
+    </div>
+    <div id="leftMenu">
+        <h4>Last 30 Days of Earthquakes</h4>
+        <h4 id="quakeTotal"></h4>
+        <table id="quakeData">
+            <thead>
+                <th></th>
+                <th>Location</th>
+                <th id="magCol" data-sort-order='desc' class='sort-default'>Mag.</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="rightMenu">
+        <h4 class="desktop">Settings</h4>
+        <div class="triangle hour desktop"></div>
+        <div class="timeSetting">
+            <div class="triangle hour mobile"></div>
+            <li class="desktop">Past Hour</li>
+            <li class="mobile">1H</li>
+            <li>
+                <input id="oneHour" type="checkbox"></input>
+            </li>
+        </div>
+        <div class="triangle day desktop"></div>
+        <div class="timeSetting">
+            <div class="triangle day mobile"></div>
+            <li class="desktop">Past 24 Hours</li>
+            <li class="mobile">24H</li>
+            <li>
+                <input id="oneDay" type="checkbox"></input>
+            </li>
+        </div>
+        <div class="triangle week desktop"></div>
+        <div class="timeSetting">
+            <div class="triangle week mobile"></div>
+            <li class="desktop">Past 7 Days</li>
+            <li class="mobile">7D</li>
+            <li>
+                <input id="oneWeek" type="checkbox"></input>
+            </li>
+        </div>
+        <div class="triangle month desktop"></div>
+        <div class="timeSetting">
+             <div class="triangle month mobile"></div>
+            <li class="desktop">Past 30 Days</li>
+            <li class="mobile">30D</li>
+            <li>
+                <input id="oneMonth" type="checkbox" disabled checked></input>
+            </li>
+        </div>
+        <br>
+        <br>
+        <div class="triangle hidden"></div>
+        <div class="topBorder desktop">
+            <li>Auto X Rotation</li>
+            <li>
+                <input id="autoRotation" type="checkbox" checked></input>
+            </li>
+        </div>
+        <div class="triangle hidden"></div>
+        <div class="desktop">
+            <li>Click &amp; Drag X Rotation</li>
+            <li>
+                <input id="mouseXRotation" type="checkbox" disabled></input>
+            </li>
+        </div>
+        <div class="triangle hidden"></div>
+        <div class="desktop">
+            <li>Click &amp; Drag Y Rotation</li>
+            <li>
+                <input id="mouseYRotation" type="checkbox" disabled></input>
+            </li>
+        </div>
+        <br>
+        <br>
+        <div class="triangle hidden"></div>
+        <div class="topBorder desktop">
+            <li>Simulation Globe</li>
+            <li>
+                <input id="simulationMap" type="checkbox" disabled checked></input>
+            </li>
+        </div>
+        <div class="triangle hidden"></div>
+        <div class="desktop">
+            <li>Physical Globe</li>
+            <li>
+                <input id="physicalMap" type="checkbox"></input>
+            </li>
+        </div>
+        <div class="triangle hidden"></div>
+        <div class="desktop">
+            <li>Political Globe</li>
+            <li>
+                <input id="politicalMap" type="checkbox"></input>
+            </li>
+        </div>
+        <div class="triangle hidden"></div>
+        <div class="desktop">
+            <li>Tectonic Globe</li>
+            <li>
+                <input id="tectonicMap" type="checkbox"></input>
+            </li>
+        </div>
+    </div>
+	<div id="globe"></div>
+</body>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js"></script>
+<script type="text/javascript" src="js/tablesort.min.js"></script>
+<script type="text/javascript" src="js/tablesort.number.js"></script>
+<script type="text/javascript" src="js/orbitControls.js"></script>
+<script type="text/javascript" src="js/tween.js"></script>
+<script type="text/javascript" src="js/auxilary.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
